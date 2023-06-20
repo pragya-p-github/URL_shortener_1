@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide the scroll bar */
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 20px); /* Subtract margin-bottom from the height */
+}
+.header {
+  background-color: #242526;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.shorten-url-form {
+  padding: 60px;
+  flex: 60%; /* Occupy 2/3 of the screen */
+  background-color: #FFFCF7;/* Add some spacing between sections */
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+}
+#note{
+  align-items: center;
+  width: 30%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.dropdown:hover {
+  background-color: #e2e0dd;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
+  height: 40px;
+  width: 70%;
+  box-shadow: 1px 1px 1px #24252640;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.list{
+  padding: 5px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3c3e40;
+  box-shadow: 0 0 0 2px #24252640;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.button{
+  background-color: #242526;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 45px;
+}
+
+.button:hover {
+  background-color: #3c3e40;
+}
+
+.button:active {
+  background-color: #242526;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.search-results {
+  background-color: #7DBEA4;
+  flex: 50%;
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+  margin-left: 20px; /* Add some spacing between sections */
+}
+
+.searchs{
+  background-color: #FFFCF7;
+  padding: 15px;
+  flex: 60%;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 20px;
+}
+
+.shortened-URL{
+  background-color: #d0dbc8;
+  padding: 15px;
+  flex: 60%;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 20px;
+}
